@@ -48,3 +48,11 @@ Rodando comando para criar produto
 
 Rodando comando para pegar produto
 ```sh go run main.go cli -a=get --id=752e6333-fbec-4af4-8741-3751e727c2ce ```
+
+
+#### Testando HTTP service
+Startando servidor HTTP:
+```sh go run main.go http ```
+
+Chamando a api:
+```sh curl http://localhost:8080/product/f56b3370-a708-484b-b36d-a9af4cfabf1c ```
