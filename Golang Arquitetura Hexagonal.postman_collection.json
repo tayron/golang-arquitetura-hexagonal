@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "80fc56f3-71cb-4be9-8fbf-221498036a53",
+		"name": "Golang Arquitetura Hexagonal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17398232"
+	},
+	"item": [
+		{
+			"name": "/product/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product/f56b3370-a708-484b-b36d-a9af4cfabf1c",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"f56b3370-a708-484b-b36d-a9af4cfabf1c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/product/{id}/enable",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product/f56b3370-a708-484b-b36d-a9af4cfabf1c/enable",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"f56b3370-a708-484b-b36d-a9af4cfabf1c",
+						"enable"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/product/{id}/disable",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product/f56b3370-a708-484b-b36d-a9af4cfabf1c/disable",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"f56b3370-a708-484b-b36d-a9af4cfabf1c",
+						"disable"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\": \"Product New Postman\",\n    \"Price\": -30.77\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/product",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
